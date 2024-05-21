@@ -59,6 +59,10 @@ body {
         0 0 45px #8220DB,
         0 0 60px #8220DB;
 }
+.slide_button
+{
+    display: none;
+}
 @media screen and (max-width:860px) 
 {
     .menu 
@@ -68,14 +72,41 @@ body {
         width: 100%;
         height: 90vh;
         top: 10vh;
-        left: 0;
+        left: 100%;
         background-color: #0d0a10;
         flex-direction: column;
         justify-content: center;
+        transition: left .5s ease-in-out;
     }
     .menu_item
     {
         cursor: none;
+    }
+    .slide_button
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5vh;
+        width: 6vh;
+        height: 6vh;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        text-shadow:
+        0 0 15px #fff,
+        0 0 30px #fff,
+        0 0 45px #fff,
+        0 0 60px #fff;
+        transition: text-shadow .5s ease-in-out;
+    }
+    .active
+    {
+        text-shadow:
+        0 0 15px #8220DB,
+        0 0 30px #8220DB,
+        0 0 45px #8220DB,
+        0 0 60px #8220DB;
     }
 }
 /*PRINCIPAL*/
