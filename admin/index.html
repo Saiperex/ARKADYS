@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/c8bf7962f3.js" crossorigin="anonymous"></script>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+</head>
+<body>
+    <div class="fondo">
+        <div id="particles-js"></div>
+    </div>
+    <main class="principal">
+        <form class="login" action="acceso.php" method="post">
+            <h1>Inicio de Sesión</h1>
+            <div class="user">
+                <label for="user">Usuario</label>
+                <input type="text" name="user" id="user">
+            </div>
+            <div class="password">
+                <label for="password">Clave</label>
+                <input type="password" name="password" id="password">
+                <i class="fa-solid fa-eye"></i>
+            </div>
+            <button type="submit">Ingresar</button>
+            <legend class="mensaje"></legend>
+        </form>
+    </main>
+    <script src="js/login.js"></script>
+    <script src="../js/particles.min.js"></script>
+    <script src="../js/config_particles_login.js"></script>
+</body>
+</html>
