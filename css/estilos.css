@@ -529,3 +529,117 @@ body {
     0 0 25px #8220DB;
 
 }
+/*PLANES*/
+#planes
+{
+    flex-direction: column;
+    color: #fff;
+    font-family: "Quantico", sans-serif;
+}
+#planes picture
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#planes picture img
+{
+    width: 40%;
+    filter: drop-shadow(0 0 30px #8220DB);
+    animation: footers 10s linear infinite;
+}
+@keyframes footers 
+{
+    0%
+    {
+        filter: drop-shadow(0 0 30px #8220DB);
+    }  
+    25%
+    {
+        filter: drop-shadow(0 0 15px #8220DB);
+    }
+    50%
+    {
+        filter: drop-shadow(0 0 50px #8220DB);
+    } 
+    75%
+    {
+        filter: drop-shadow(0 0 15px #8220DB);
+    }
+    100%
+    {
+        filter: drop-shadow(0 0 30px #8220DB);
+    } 
+}
+#planes h2
+{
+    padding: 10px;
+    font-family: "Quantico", sans-serif;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 30px #8220DB;
+    position: relative;
+}
+#planes h2 img
+{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    filter: drop-shadow(0 0 30px #8220DB);
+}
+.planes_sec
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2vh 0;
+}
+.plan
+{
+    margin: 20px 0;
+    width: 300px;
+    height: 640px;
+    border: solid 1px #fff;
+    padding: 30px;
+    position: relative;
+    transition: scale .5s ease-in-out;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plan h3
+{
+    text-align: center;
+    margin: 20px 0;
+}
+.plan p
+{
+    text-align: center;
+    margin: 10px 0;
+}
+.plan ul
+{
+    height: 300px;
+}
+.plan a
+{
+    display: inline-block;
+    padding: 10px;
+    background-color: #8220DB;
+    color: #000;
+    box-shadow:
+    0 0 5px #8220DB,
+    0 0 15px #8220DB,
+    0 0 25px #8220DB;
+}
+.plan:hover
+{
+    scale: 1.1;
+}
